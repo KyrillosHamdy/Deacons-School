@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --bg-color: #fff;
+}
+
+[data-theme="dark"] {
+    --primary-color: #34495e;
+    --secondary-color: #1abc9c;
+    --light-color: #2c3e50;
+    --dark-color: #ecf0f1;
+    --text-color: #ecf0f1;
+    --bg-color: #2c3e50;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Tajawal', sans-serif;
+    transition: all 0.3s ease;
+}
+
+
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-link {
+    color: var(--light-color) !important;
+    font-weight: 500;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.hero-section {
+    background-image: url('20250924_1611_مدرسة البابا ديسقورس_remix_01k5xxekh3ersrqpqz9zx6esb2.png');
+    background-size: 1700px 700px;
+    height: 700px;
+    /* opacity: 0.5; */
+    background-repeat: no-repeat;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#stages{
+    text-align: center;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stage-card {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.stage-card:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--light-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+/* RTL adjustments */
+.dropdown-menu {
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+    .hero-section {
+        padding: 60px 0;
+        background-size: 450px 300px;
+        height: 300px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
